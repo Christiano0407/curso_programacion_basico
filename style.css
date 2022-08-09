@@ -102,6 +102,10 @@ input:active {
     transform: scale(0.9);
 }
 
+.option {
+    margin: 1rem auto;
+}
+
 .text-form {
     width: 100%;
     display: flex;

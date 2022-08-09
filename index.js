@@ -22,17 +22,24 @@ const piedra = document.querySelector(`#piedra`);
 const papel = document.querySelector(`#papel`);
 const tijeraa = document.querySelector(`#tijera`);
 
+const option = document.querySelector(`#IDOption`);
+//option.appendChild(jugador);
+option.innerHTML = jugador;
+//option.innerHTML = ;
+
 piedra.addEventListener("click", () => {
-  console.log("Piedra");
+  //console.log("Piedra");
   game();
 });
 
 papel.addEventListener("click", () => {
-  console.log("Papel");
+  //console.log("Papel");
+  game();
 });
 
 tijeraa.addEventListener("click", () => {
-  console.log("Tijera");
+  //console.log("Tijera");
+  game();
 });
 
 // alert("Elegiste " + jugador)
@@ -47,4 +54,4 @@ function game() {
     console.log("Elegiste PERDER");
   }
 }
-game();
+//game();
