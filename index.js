@@ -8,6 +8,7 @@ let pc = 2;
 const piedra = document.querySelector(`#piedra`);
 const papel = document.querySelector(`#papel`);
 const tijeraa = document.querySelector(`#tijera`);
+const option = document.querySelector(`#IDoption`);
 
 piedra.addEventListener("click", () => {
   console.log("Piedra");
@@ -24,7 +25,7 @@ tijeraa.addEventListener("click", () => {
   //game();
 });
 
-//** === Game (Options) >>> */
+//*! === Game (Options) >>> */
 function game() {
   if (jugador == 1) {
     console.log("Jugador: Elegiste piedra 🥌");
@@ -47,7 +48,7 @@ function game() {
 
   combat();
 }
-//** == Combat ==> */
+//*! == Combat ==> */
 function combat() {
   if (pc == jugador) {
     console.log("EMPATE!!");
@@ -63,5 +64,5 @@ function combat() {
   }
 }
 
-//** === Call === */
+//*TODO === Call === */
 game();
