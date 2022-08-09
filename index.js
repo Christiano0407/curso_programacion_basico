@@ -72,6 +72,7 @@ function combat() {
 
 //*TODO === Call === */
 game();
+option.innerHTML = combat();
 
 //** === Exercise Math === */
 /* const max = 10;
