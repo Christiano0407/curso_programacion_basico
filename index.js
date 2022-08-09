@@ -22,6 +22,19 @@ const piedra = document.querySelector(`#piedra`);
 const papel = document.querySelector(`#papel`);
 const tijeraa = document.querySelector(`#tijera`);
 
+piedra.addEventListener("click", () => {
+  console.log("Piedra");
+  game();
+});
+
+papel.addEventListener("click", () => {
+  console.log("Papel");
+});
+
+tijeraa.addEventListener("click", () => {
+  console.log("Tijera");
+});
+
 // alert("Elegiste " + jugador)
 function game() {
   if (jugador == 1) {

@@ -93,6 +93,15 @@ form input {
     border-radius: 5px;
 }
 
+input:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+input:active {
+    transform: scale(0.9);
+}
+
 .text-form {
     width: 100%;
     display: flex;
