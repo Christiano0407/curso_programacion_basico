@@ -3,7 +3,9 @@ console.log("Hello World");
 //** === Algorithm === */
 let jugador = 0;
 jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera");
-let pc = 2;
+let min = 1;
+let max = 3;
+let pc = Math.floor(Math.random() * (max - min + 1) + 1);
 
 const piedra = document.querySelector(`#piedra`);
 const papel = document.querySelector(`#papel`);
@@ -66,3 +68,10 @@ function combat() {
 
 //*TODO === Call === */
 game();
+
+//** === Exercise Math === */
+/* const max = 10;
+const min = 5;
+let num = Math.floor(Math.random() * (max - min + 1) + min);
+console.log(num);
+ */
