@@ -3,14 +3,18 @@ console.log("Hello World");
 //** === Algorithm === */
 let jugador = 0;
 jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera");
-let min = 1;
-let max = 3;
-let pc = Math.floor(Math.random() * (max - min + 1) + 1);
+/* let min = 1;
+let max = 3; */
+let pc = random(3, 1);
 
 const piedra = document.querySelector(`#piedra`);
 const papel = document.querySelector(`#papel`);
 const tijeraa = document.querySelector(`#tijera`);
 const option = document.querySelector(`#IDoption`);
+
+function random(max, min) {
+  return Math.floor(Math.random() * (max - min + 1) + 1);
+}
 
 piedra.addEventListener("click", () => {
   console.log("Piedra");
