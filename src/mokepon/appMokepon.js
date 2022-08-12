@@ -14,23 +14,12 @@ const punchEarth = document.querySelector("#punchEarth");
 //*TODO ===  ===  Code === === */
 const initGame = () => {
   btnSelectMascot.addEventListener("click", () => {
-    selectMascot();
+    console.log("Select your Best Animal");
     checkedAdd();
-    /* checkedNot(); */
   });
 };
 
 function checkedAdd() {
-  /* if (true) {
-    const monsterFire = document.querySelector(`#monsterFire`).checked;
-    return console.log(`Select a MonsterFire: ${monsterFire}`);
-  }else {
-    const monsterFire = (document.querySelector(
-      `#monsterFire`
-    ).checked = false);
-    return monsterFire;
-  } */
-
   if (monsterFire.checked) {
     console.log(`Your Select: MonsterFire 🔥`);
   } else if (waterBomb.checked) {
@@ -42,9 +31,9 @@ function checkedAdd() {
   }
 }
 
-const selectMascot = () => {
-  return console.log("Select Animal");
-};
+/* const selectMascot = () => {
+  return console.log("Select your Best Animal");
+}; */
 
 //** === Init Game Window === */
 window.addEventListener("load", initGame);
