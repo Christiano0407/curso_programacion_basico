@@ -7,7 +7,8 @@ const btnEarth = document.querySelector(`#btnMokepon-earth`);
 const btnSelectMascot = document.querySelector("#IdBtnSelect");
 const btnNewGame = document.querySelector(`#IdNewGame`);
 //*! === Mokepon Monsters */
-const waterBomb = document.querySelector("#waterBomb");
+const monsterFire = document.querySelector(`#monsterFire`);
+const waterBomb = document.querySelector(`#waterBomb`);
 const punchEarth = document.querySelector("#punchEarth");
 
 //*TODO ===  ===  Code === === */
@@ -20,20 +21,26 @@ const initGame = () => {
 };
 
 function checkedAdd() {
-  if (true) {
-    const monsterFire = (document.querySelector(`#monsterFire`).checked = true);
+  /* if (true) {
+    const monsterFire = document.querySelector(`#monsterFire`).checked;
     return console.log(`Select a MonsterFire: ${monsterFire}`);
-  } else {
+  }else {
     const monsterFire = (document.querySelector(
       `#monsterFire`
     ).checked = false);
     return monsterFire;
+  } */
+
+  if (monsterFire.checked) {
+    console.log(`Your Select: MonsterFire 🔥`);
+  } else if (waterBomb.checked) {
+    console.log(`Your Select: WaterBomb 💧`);
+  } else if (punchEarth.checked) {
+    console.log(`Your Select: PunchEarth 🌍🦾`);
+  } else {
+    console.log("Sorry! Your Not Select One Mokepon");
   }
 }
-
-/* function checkedNot() {
-  
-} */
 
 const selectMascot = () => {
   return console.log("Select Animal");
