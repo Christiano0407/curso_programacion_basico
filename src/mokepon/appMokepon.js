@@ -15,19 +15,25 @@ const initGame = () => {
   btnSelectMascot.addEventListener("click", () => {
     selectMascot();
     checkedAdd();
-    checkedNot();
+    /* checkedNot(); */
   });
 };
 
 function checkedAdd() {
-  const monsterFire = (document.querySelector(`#monsterFire`).checked = true);
-  return console.log(`Select a MonsterFire: ${monsterFire}`);
+  if (true) {
+    const monsterFire = (document.querySelector(`#monsterFire`).checked = true);
+    return console.log(`Select a MonsterFire: ${monsterFire}`);
+  } else {
+    const monsterFire = (document.querySelector(
+      `#monsterFire`
+    ).checked = false);
+    return monsterFire;
+  }
 }
 
-function checkedNot() {
-  const monsterFire = (document.querySelector(`#monsterFire`).checked = false);
-  return monsterFire;
-}
+/* function checkedNot() {
+  
+} */
 
 const selectMascot = () => {
   return console.log("Select Animal");
