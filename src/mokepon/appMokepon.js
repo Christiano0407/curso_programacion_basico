@@ -14,26 +14,24 @@ const punchEarth = document.querySelector("#punchEarth");
 //*TODO ===  ===  Code === === */
 const initGame = () => {
   btnSelectMascot.addEventListener("click", () => {
-    console.log("Select your Best Animal");
+    alert("Select your Best Animal for Battle");
     checkedAdd();
   });
 };
-
+//** === Conditionals */
 function checkedAdd() {
   if (monsterFire.checked) {
-    console.log(`Your Select: MonsterFire 🔥`);
+    alert(`Your Select: MonsterFire 🔥`);
   } else if (waterBomb.checked) {
-    console.log(`Your Select: WaterBomb 💧`);
+    alert(`Your Select: WaterBomb 💧`);
   } else if (punchEarth.checked) {
-    console.log(`Your Select: PunchEarth 🌍🦾`);
+    alert(`Your Select: PunchEarth 🌍🦾`);
   } else {
-    console.log("Sorry! Your Not Select One Mokepon");
+    alert("Sorry! Your Not Select One Mokepon");
   }
 }
-
-/* const selectMascot = () => {
-  return console.log("Select your Best Animal");
-}; */
+//** === BATTLE */
+const selectBattleMascot = () => {};
 
 //** === Init Game Window === */
 window.addEventListener("load", initGame);
