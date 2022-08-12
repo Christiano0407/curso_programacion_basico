@@ -72,6 +72,14 @@ section {
     margin: 2rem auto;
 }
 
+.monster-Add {
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .mokeponList {
     width: 100%;
     margin: 0 auto;
@@ -157,7 +165,8 @@ span {
 .init {
     margin: 1rem auto;
 }
-.init .text-new { 
+
+.init .text-new {
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
