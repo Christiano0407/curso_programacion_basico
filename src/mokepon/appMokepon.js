@@ -5,7 +5,7 @@ const btnWater = document.querySelector(`#btnMokepon-water`);
 const btnEarth = document.querySelector(`#btnMokepon-earth`);
 
 //*TODO ===  === */
-const btnMokepon = document.querySelector(`#btnMokepon`);
-btnMokepon.addEventListener("click", () => {
-  console.log("Click Mokepon");
-});
+
+//** === Attack === */
+
+//*! === Message === */
