@@ -8,7 +8,10 @@ const btnNewGame = document.querySelector(`#IdNewGame`);
 
 //*TODO ===  ===  Code === === */
 btnSelectMascot.addEventListener("click", () => {
-  console.log("Select Animal");
+  function selectMascot() {
+    return console.log("Select Animal");
+  }
+  selectMascot();
 });
 
 //** === Attack === */
