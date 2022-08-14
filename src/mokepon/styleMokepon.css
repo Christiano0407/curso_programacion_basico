@@ -171,3 +171,16 @@ span {
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
+/* == AppendChield*/
+.childMonster {
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.monsterImg {
+    border-radius: 10px;
+}

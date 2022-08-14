@@ -10,6 +10,7 @@ let btnNewGame = document.querySelector(`#IdNewGame`);
 const monsterFire = document.querySelector(`#monsterFire`);
 const waterBomb = document.querySelector(`#waterBomb`);
 const punchEarth = document.querySelector("#punchEarth");
+const divMonster = document.querySelector(`#IdChildMonster`);
 
 //*TODO ===  ===  Code === === */
 //** === Init Game === */
@@ -29,6 +30,14 @@ const checkedAdd = () => {
     alert("Sorry! Your Not Select One Mokepon");
   }
 };
+
+//*! === Add Chield Elements */
+const img = document.createElement("img");
+img.src = "https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg";
+img.width = 200;
+img.height = 150;
+img.className = "monsterImg";
+divMonster.appendChild(img);
 //** === BATTLE */
 const selectBattleMascot = () => {};
 
