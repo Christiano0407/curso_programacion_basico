@@ -28,6 +28,7 @@ const checkedAdd = () => {
     alert(`Your Select: MonsterFire 🔥`);
     fireAdd();
     playMonster.innerHTML = "MonsterFire 🔥";
+    fireAttack();
   } else if (waterBomb.checked) {
     alert(`Your Select: WaterBomb 💧`);
     waterAdd();
@@ -125,5 +126,14 @@ function enemyThree() {
   img.className = "monsterImg";
   divEnemy.appendChild(img);
 }
+
+//*TODO === ===  Attack === === === === === === === === === === ==== === === ===  */
+
+const fireAttack = () => {
+  btnFire.addEventListener("click", () => {
+    console.log("Fire Attack");
+  });
+};
+
 //** === Init Game Window === */
 window.addEventListener("load", initGame);
