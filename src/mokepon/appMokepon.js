@@ -1,25 +1,24 @@
 //** === Mokepon Variables ===  */
 //*! === Buttons */
-const btnFire = document.querySelector(`#btnMokepon-fire`);
-const btnWater = document.querySelector(`#btnMokepon-water`);
-const btnEarth = document.querySelector(`#btnMokepon-earth`);
+let btnFire = document.querySelector(`#btnMokeponFire`);
+let btnWater = document.querySelector(`#btnMokeponWater`);
+let btnEarth = document.querySelector(`#btnMokeponEarth`);
 //*! === Buttons Select and Init Game */
-const btnSelectMascot = document.querySelector("#IdBtnSelect");
-const btnNewGame = document.querySelector(`#IdNewGame`);
+
+let btnNewGame = document.querySelector(`#IdNewGame`);
 //*! === Mokepon Monsters */
 const monsterFire = document.querySelector(`#monsterFire`);
 const waterBomb = document.querySelector(`#waterBomb`);
 const punchEarth = document.querySelector("#punchEarth");
 
 //*TODO ===  ===  Code === === */
+//** === Init Game === */
 const initGame = () => {
-  btnSelectMascot.addEventListener("click", () => {
-    alert("Select your Best Animal for Battle");
-    checkedAdd();
-  });
+  let btnSelectMascot = document.getElementById("IdBtnSelect");
+  btnSelectMascot.addEventListener(`click`, checkedAdd);
 };
-//** === Conditionals */
-function checkedAdd() {
+//** === Conditionals === */
+const checkedAdd = () => {
   if (monsterFire.checked) {
     alert(`Your Select: MonsterFire 🔥`);
   } else if (waterBomb.checked) {
@@ -29,7 +28,7 @@ function checkedAdd() {
   } else {
     alert("Sorry! Your Not Select One Mokepon");
   }
-}
+};
 //** === BATTLE */
 const selectBattleMascot = () => {};
 
