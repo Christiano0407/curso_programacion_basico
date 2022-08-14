@@ -186,7 +186,7 @@ span {
     margin-bottom: 1rem;
 }
 
-/* == AppendChield*/
+/* == AppendChild*/
 .childMonster {
     width: 100%;
     margin: 2rem auto;
@@ -198,6 +198,7 @@ span {
 .monsterImg {
     border-radius: 2rem;
     padding: 5px;
+    object-fit: cover;
 }
 
 .monsterEnemy {
