@@ -48,7 +48,7 @@ span {
 
 body {
     width: 100%;
-    background-color: #fff;
+    background-color: #8AA6A3;
 }
 
 main {
@@ -67,8 +67,22 @@ section {
 
 .titleMokepon {
     text-align: center;
-    font-size: 2.4rem;
-    font-weight: 900;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 2rem auto;
+}
+
+.mascotSelect {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem auto;
+}
+
+.attack-Select {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin: 2rem auto;
 }
 
@@ -182,7 +196,7 @@ span {
 }
 
 .monsterImg {
-    border-radius: 10px;
+    border-radius: 2rem;
     padding: 5px;
 }
 
