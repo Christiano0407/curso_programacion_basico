@@ -139,13 +139,13 @@ function enemyThree() {
 }; */
 //*! === Function Attack Fire */
 function fireAttack() {
-  return (playAttack = console.log("Fire"));
+  playAttack = console.log("Fire");
 }
 function waterAttack() {
-  return (playAttack = console.log("Water"));
+  playAttack = console.log("Water");
 }
 function earthAttack() {
-  return (playAttack = console.log("Rock Attack!!"));
+  playAttack = console.log("Rock Attack!!");
 }
 
 //*TODO  === === Init Game Window === === */
