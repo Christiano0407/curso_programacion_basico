@@ -183,6 +183,7 @@ span {
 
 .monsterImg {
     border-radius: 10px;
+    padding: 5px;
 }
 
 .monsterEnemy {
