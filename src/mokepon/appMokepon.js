@@ -1,4 +1,4 @@
-//** === Mokepon Variables ===  */
+//*TODO === Mokepon Variables ===  ===  ===  ===  ===  === === === */
 //*! === Buttons */
 let btnFire = document.querySelector(`#btnMokeponFire`);
 let btnWater = document.querySelector(`#btnMokeponWater`);
@@ -12,7 +12,7 @@ const waterBomb = document.querySelector(`#waterBomb`);
 const punchEarth = document.querySelector("#punchEarth");
 const divMonster = document.querySelector(`#IdChildMonster`);
 
-//*TODO ===  ===  Code === === */
+//*TODO ===  ===  Code === ===  === === === === === === === === === */
 //** === Init Game === */
 const initGame = () => {
   let btnSelectMascot = document.getElementById("IdBtnSelect");
