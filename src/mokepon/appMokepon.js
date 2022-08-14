@@ -11,8 +11,10 @@ const monsterFire = document.querySelector(`#monsterFire`);
 const waterBomb = document.querySelector(`#waterBomb`);
 const punchEarth = document.querySelector("#punchEarth");
 const divMonster = document.querySelector(`#IdChildMonster`);
+const divEnemy = document.querySelector("#idMonsterEnemy");
 
 //*TODO ===  ===  Code === ===  === === === === === === === === === */
+
 //** === Init Game === */
 const initGame = () => {
   let btnSelectMascot = document.getElementById("IdBtnSelect");
@@ -37,9 +39,35 @@ const checkedAdd = () => {
   } else {
     alert("Sorry!! Your Not Select One. Please. select your Mokepon");
   }
+
+  enemySelectAdd();
 };
 
-//*! === Add Chield Elements */
+const enemySelectAdd = () => {
+  let enemyMonster = document.querySelector("#enemyMonster");
+  let enemyAttack = random(1, 3);
+
+  if (enemyAttack == 1) {
+    enemyMonster.innerHTML = "ThunderLight ⚡";
+    enemyTwo();
+  } else if (enemyAttack == 2) {
+    enemyMonster.innerHTML = "BombGreen 🌱";
+    enemyOne();
+  } else if (enemyAttack == 3) {
+    enemyMonster.innerHTML = "CocoSmash 🥌";
+    enemyThree();
+  } else {
+    alert("Sorry!! Please, select your Mokepon of Attack");
+  }
+};
+
+//** === Random Function === */
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+//*! === Add Child Elements */
+// User =
 function fireAdd() {
   const img = document.createElement("img");
   img.src =
@@ -50,7 +78,6 @@ function fireAdd() {
   img.className = "monsterImg";
   divMonster.appendChild(img);
 }
-
 function waterAdd() {
   const img = document.createElement("img");
   img.src =
@@ -70,10 +97,33 @@ function earthAdd() {
   img.className = "monsterImg";
   divMonster.appendChild(img);
 }
-//** === BATTLE */
-const selectBattleMascot = () => {};
-
+// Enemy =
+function enemyOne() {
+  const img = document.createElement("img");
+  img.src =
+    "https://images.pexels.com/photos/4188296/pexels-photo-4188296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  img.width = 150;
+  img.height = 150;
+  img.className = "monsterImg";
+  divEnemy.appendChild(img);
+}
+function enemyTwo() {
+  const img = document.createElement("img");
+  img.src =
+    "https://images.unsplash.com/photo-1609845768806-767fcfc317b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80";
+  img.width = 150;
+  img.height = 150;
+  img.className = "monsterImg";
+  divEnemy.appendChild(img);
+}
+function enemyThree() {
+  const img = document.createElement("img");
+  img.src =
+    "https://images.unsplash.com/photo-1590955559496-50316bd28ff2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1211&q=80";
+  img.width = 150;
+  img.height = 150;
+  img.className = "monsterImg";
+  divEnemy.appendChild(img);
+}
 //** === Init Game Window === */
 window.addEventListener("load", initGame);
-
-//** === Message === */
