@@ -1,10 +1,5 @@
 //*TODO === Mokepon Variables ===  ===  ===  ===  ===  === === === */
-//*! === Buttons */
-let btnFire = document.querySelector(`#btnMokeponFire`);
-let btnWater = document.querySelector(`#btnMokeponWater`);
-let btnEarth = document.querySelector(`#btnMokeponEarth`);
 //*! === Buttons Select and Init Game */
-
 let btnNewGame = document.querySelector(`#IdNewGame`);
 //*! === Mokepon Monsters */
 const monsterFire = document.querySelector(`#monsterFire`);
@@ -13,12 +8,21 @@ const punchEarth = document.querySelector("#punchEarth");
 const divMonster = document.querySelector(`#IdChildMonster`);
 const divEnemy = document.querySelector("#idMonsterEnemy");
 
+let playAttack;
+
 //*TODO ===  ===  Code === ===  === === === === === === === === === */
 
 //** === Init Game === */
 const initGame = () => {
   let btnSelectMascot = document.getElementById("IdBtnSelect");
   btnSelectMascot.addEventListener(`click`, checkedAdd);
+  // === Buttons  and Events ===
+  let btnFire = document.querySelector(`#btnMokeponFire`);
+  btnFire.addEventListener("click", fireAttack);
+  let btnWater = document.querySelector(`#btnMokeponWater`);
+  btnWater.addEventListener("click", waterAttack);
+  let btnEarth = document.querySelector(`#btnMokeponEarth`);
+  btnEarth.addEventListener("click", earthAttack);
 };
 //** === Conditionals === */
 const checkedAdd = () => {
@@ -127,31 +131,21 @@ function enemyThree() {
 }
 
 //*TODO === ===  Attack === === === === === === === === === === ==== === === ===  */
-
-let playAttack;
-
 //*! === Fire */
 /* const fireAttack = () => {
   btnFire.addEventListener("click", () => {
     console.log("Fire Attack");
   });
 }; */
-
-btnFire.addEventListener("click", () => {
-  fireAttack();
-});
-//*! === Water */
-btnWater.addEventListener("click", () => {
-  console.log("Water");
-});
-//*! === Earth */
-btnEarth.addEventListener("click", () => {
-  console.log("Earth");
-});
-
 //*! === Function Attack Fire */
 function fireAttack() {
   return (playAttack = console.log("Fire"));
+}
+function waterAttack() {
+  return (playAttack = console.log("Water"));
+}
+function earthAttack() {
+  return (playAttack = console.log("Rock Attack!!"));
 }
 
 //*TODO  === === Init Game Window === === */
