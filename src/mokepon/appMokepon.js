@@ -131,7 +131,7 @@ function enemyThree() {
 }
 
 //*TODO === ===  Attack === === === === === === === === === === ==== === === ===  */
-//*! === Fire */
+//*! === Other form */
 /* const fireAttack = () => {
   btnFire.addEventListener("click", () => {
     console.log("Fire Attack");
