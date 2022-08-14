@@ -28,7 +28,6 @@ const checkedAdd = () => {
     alert(`Your Select: MonsterFire 🔥`);
     fireAdd();
     playMonster.innerHTML = "MonsterFire 🔥";
-    fireAttack();
   } else if (waterBomb.checked) {
     alert(`Your Select: WaterBomb 💧`);
     waterAdd();
@@ -129,11 +128,31 @@ function enemyThree() {
 
 //*TODO === ===  Attack === === === === === === === === === === ==== === === ===  */
 
-const fireAttack = () => {
+let playAttack;
+
+//*! === Fire */
+/* const fireAttack = () => {
   btnFire.addEventListener("click", () => {
     console.log("Fire Attack");
   });
-};
+}; */
 
-//** === Init Game Window === */
+btnFire.addEventListener("click", () => {
+  fireAttack();
+});
+//*! === Water */
+btnWater.addEventListener("click", () => {
+  console.log("Water");
+});
+//*! === Earth */
+btnEarth.addEventListener("click", () => {
+  console.log("Earth");
+});
+
+//*! === Function Attack Fire */
+function fireAttack() {
+  return (playAttack = console.log("Fire"));
+}
+
+//*TODO  === === Init Game Window === === */
 window.addEventListener("load", initGame);
