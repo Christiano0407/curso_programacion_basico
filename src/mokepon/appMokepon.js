@@ -1,10 +1,11 @@
 //*TODO === Mokepon Variables ===  ===  ===  ===  ===  === === === */
-//*! === Conditionals === */
+//** === Import  Conditionals === */
 import { checkedAdd } from "./js/mokepon01.js";
 //import { enemySelectAdd } from "./js/mokepon01";
-//*! === Buttons Select and Init Game */
-//let btnNewGame = document.querySelector(`#IdNewGame`);
-let playAttack;
+//** == Import Attack */
+import { fireAttack } from "./js/mokeponAttack03.js";
+import { waterAttack } from "./js/mokeponAttack03.js";
+import { earthAttack } from "./js/mokeponAttack03.js";
 
 //*TODO ===  ===  Code === ===  === === === === === === === === === */
 //** === Init Game === */
@@ -21,16 +22,5 @@ const initGame = () => {
 };
 
 //*TODO === ===  Attack === === === === === === === === === === ==== === === ===  */
-//*! === Function Attack Fire */
-function fireAttack() {
-  playAttack = console.log("Fire");
-}
-function waterAttack() {
-  playAttack = console.log("Water");
-}
-function earthAttack() {
-  playAttack = console.log("Rock Attack!!");
-}
-
-//*TODO  === === Init Game Window === === */
+//** === === Init Game Window === === */
 window.addEventListener("load", initGame);
