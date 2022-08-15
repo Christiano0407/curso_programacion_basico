@@ -1,13 +1,13 @@
 //** === Conditionals === */
+import { fireAdd } from "./mokeponElements.js";
+import { waterAdd } from "./mokeponElements.js";
+import { earthAdd } from "./mokeponElements.js";
+import { enemyOne } from "./mokeponElements.js";
+import { enemyTwo } from "./mokeponElements.js";
+import { enemyThree } from "./mokeponElements.js";
 const monsterFire = document.querySelector(`#monsterFire`);
 const waterBomb = document.querySelector(`#waterBomb`);
 const punchEarth = document.querySelector("#punchEarth");
-import { fireAdd } from "./mokeponElements";
-import { waterAdd } from "./mokeponElements";
-import { earthAdd } from "./mokeponElements";
-import { enemyOne } from "./mokeponElements";
-import { enemyTwo } from "./mokeponElements";
-import { enemyThree } from "./mokeponElements";
 
 //*! === */
 export const checkedAdd = () => {
@@ -32,7 +32,7 @@ export const checkedAdd = () => {
   enemySelectAdd();
 };
 
-export const enemySelectAdd = () => {
+const enemySelectAdd = () => {
   let enemyMonster = document.querySelector("#enemyMonster");
   let enemyAttack = random(1, 3);
 

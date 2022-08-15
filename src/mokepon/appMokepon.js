@@ -1,13 +1,12 @@
 //*TODO === Mokepon Variables ===  ===  ===  ===  ===  === === === */
+//*! === Conditionals === */
+import { checkedAdd } from "./js/mokepon01.js";
+//import { enemySelectAdd } from "./js/mokepon01";
 //*! === Buttons Select and Init Game */
 //let btnNewGame = document.querySelector(`#IdNewGame`);
 let playAttack;
 
 //*TODO ===  ===  Code === ===  === === === === === === === === === */
-//** === Conditionals === */
-import { checkedAdd } from "./js/mokepon01";
-//import { enemySelectAdd } from "./js/mokepon01";
-
 //** === Init Game === */
 const initGame = () => {
   let btnSelectMascot = document.getElementById("IdBtnSelect");
@@ -22,12 +21,6 @@ const initGame = () => {
 };
 
 //*TODO === ===  Attack === === === === === === === === === === ==== === === ===  */
-//*! === Other form */
-/* const fireAttack = () => {
-  btnFire.addEventListener("click", () => {
-    console.log("Fire Attack");
-  });
-}; */
 //*! === Function Attack Fire */
 function fireAttack() {
   playAttack = console.log("Fire");
