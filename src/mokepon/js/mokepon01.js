@@ -5,6 +5,7 @@ import { earthAdd } from "./mokeponElements.js";
 import { enemyOne } from "./mokeponElements.js";
 import { enemyTwo } from "./mokeponElements.js";
 import { enemyThree } from "./mokeponElements.js";
+import { enemyRandomAttack } from "./mokeponAttack03.js";
 const monsterFire = document.querySelector(`#monsterFire`);
 const waterBomb = document.querySelector(`#waterBomb`);
 const punchEarth = document.querySelector("#punchEarth");
@@ -39,12 +40,15 @@ const enemySelectAdd = () => {
   if (enemyAttack == 1) {
     enemyMonster.innerHTML = "ThunderLight ⚡";
     enemyTwo();
+    enemyRandomAttack();
   } else if (enemyAttack == 2) {
     enemyMonster.innerHTML = "BombGreen 🌱";
     enemyOne();
+    enemyRandomAttack();
   } else if (enemyAttack == 3) {
     enemyMonster.innerHTML = "CocoSmash 🥌";
     enemyThree();
+    enemyRandomAttack();
   } else {
     alert("Sorry!! Please, select your Mokepon of Attack");
   }

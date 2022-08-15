@@ -1,16 +1,35 @@
 //** === Attack */
 const divAttack = document.querySelector(`#IdChildAttack`);
 let playAttack;
+let enemyAttack;
+//let imageAttack;
 
 //*? === Function Attack Fire, Water and Earth === */
 export const fireAttack = () => {
-  playAttack = imageAttackFire();
+  playAttack = console.log("Fire!!!");
+  imageAttackFire();
 };
 export const waterAttack = () => {
+  playAttack = console.log("Water");
   playAttack = imageAttackWater();
 };
 export const earthAttack = () => {
+  playAttack = console.log("Earth Rock");
   playAttack = imageAttackEarth();
+};
+
+export const enemyRandomAttack = () => {
+  let enemyAttackRandomPower = randomAttack(1, 3);
+
+  if (enemyAttackRandomPower == 1) {
+    enemyAttack = console.log("Attack Plus 01");
+  } else if (enemyAttackRandomPower == 2) {
+    enemyAttack = console.log("Attack Plsu 02");
+  } else if (enemyAttackRandomPower == 3) {
+    enemyAttack == console.log("Attack Plus 03");
+  } else {
+    console.log("Your not a power!");
+  }
 };
 
 //*! === ADD Images Child */
@@ -41,3 +60,8 @@ function imageAttackEarth() {
   imageRock.className = "rockImage";
   divAttack.appendChild(imageRock);
 }
+
+//*! Random Enemy Attack === */
+const randomAttack = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
