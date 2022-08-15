@@ -213,7 +213,13 @@ span {
     align-items: center;
 }
 
-.childAttack {
+.attack-Section {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.childAttack,
+.childAttack-Enemy {
     width: 100%;
     margin: 2rem auto;
     display: flex;
@@ -223,7 +229,8 @@ span {
 
 .fireImage,
 .waterImage,
-.rockImage {
+.rockImage,
+.arrowImage {
     border-radius: 50%;
     border: none;
 }

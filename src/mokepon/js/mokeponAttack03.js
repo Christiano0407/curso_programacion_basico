@@ -1,5 +1,6 @@
 //** === Attack */
 const divAttack = document.querySelector(`#IdChildAttack`);
+const divEnemyAttack = document.querySelector(`#idEnemyChildAttack`);
 let playAttack;
 let enemyAttack;
 //let imageAttack;
@@ -11,18 +12,19 @@ export const fireAttack = () => {
 };
 export const waterAttack = () => {
   playAttack = console.log("Water");
-  playAttack = imageAttackWater();
+  imageAttackWater();
 };
 export const earthAttack = () => {
   playAttack = console.log("Earth Rock");
-  playAttack = imageAttackEarth();
+  imageAttackEarth();
 };
 
 export const enemyRandomAttack = () => {
   let enemyAttackRandomPower = randomAttack(1, 3);
 
   if (enemyAttackRandomPower == 1) {
-    enemyAttack = console.log("Attack Plus 01");
+    enemyAttack = console.log("Arrow Attack");
+    imageAttackEnemyOne();
   } else if (enemyAttackRandomPower == 2) {
     enemyAttack = console.log("Attack Plsu 02");
   } else if (enemyAttackRandomPower == 3) {
@@ -33,6 +35,7 @@ export const enemyRandomAttack = () => {
 };
 
 //*! === ADD Images Child */
+//*? === User */
 function imageAttackFire() {
   let imageFire = document.createElement("img");
   imageFire.src =
@@ -59,6 +62,16 @@ function imageAttackEarth() {
   imageRock.height = 100;
   imageRock.className = "rockImage";
   divAttack.appendChild(imageRock);
+}
+//*? === Enemy */
+function imageAttackEnemyOne() {
+  let imageEnemyOne = document.createElement("img");
+  imageEnemyOne.src =
+    "https://images.unsplash.com/photo-1563705655508-d8915da702f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80";
+  imageEnemyOne.width = 100;
+  imageEnemyOne.height = 100;
+  imageEnemyOne.className = "arrowImage";
+  divEnemyAttack.appendChild(imageEnemyOne);
 }
 
 //*! Random Enemy Attack === */
