@@ -26,9 +26,11 @@ export const enemyRandomAttack = () => {
     enemyAttack = console.log("Arrow Attack");
     imageAttackEnemyOne();
   } else if (enemyAttackRandomPower == 2) {
-    enemyAttack = console.log("Attack Plsu 02");
+    enemyAttack = console.log("Attack Thunder!");
+    imageAttackEnemyTwo();
   } else if (enemyAttackRandomPower == 3) {
-    enemyAttack == console.log("Attack Plus 03");
+    enemyAttack == console.log("Attack Smash");
+    imageAttackEnemyThree();
   } else {
     console.log("Your not a power!");
   }
@@ -72,6 +74,24 @@ function imageAttackEnemyOne() {
   imageEnemyOne.height = 100;
   imageEnemyOne.className = "arrowImage";
   divEnemyAttack.appendChild(imageEnemyOne);
+}
+function imageAttackEnemyTwo() {
+  let imageEnemyTwo = document.createElement("img");
+  imageEnemyTwo.src =
+    "https://images.unsplash.com/photo-1530380774715-d5418b22b2bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
+  imageEnemyTwo.width = 100;
+  imageEnemyTwo.height = 100;
+  imageEnemyTwo.className = "enemyImageOne";
+  divEnemyAttack.appendChild(imageEnemyTwo);
+}
+function imageAttackEnemyThree() {
+  let imageEnemyThree = document.createElement("img");
+  imageEnemyThree.src =
+    "https://images.unsplash.com/photo-1514771206769-bd41b0138cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
+  imageEnemyThree.width = 100;
+  imageEnemyThree.height = 100;
+  imageEnemyThree.className = "enemyImageThree";
+  divEnemyAttack.appendChild(imageEnemyThree);
 }
 
 //*! Random Enemy Attack === */
