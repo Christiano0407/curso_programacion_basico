@@ -230,7 +230,9 @@ span {
 .fireImage,
 .waterImage,
 .rockImage,
-.arrowImage {
+.arrowImage,
+.enemyImageOne,
+.enemyImageThree {
     border-radius: 50%;
     border: none;
 }
