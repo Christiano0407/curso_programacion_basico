@@ -9,7 +9,7 @@ const monsterFire = document.querySelector(`#monsterFire`);
 const waterBomb = document.querySelector(`#waterBomb`);
 const punchEarth = document.querySelector("#punchEarth");
 
-//*! === */
+//*! === User*/
 export const checkedAdd = () => {
   let playMonster = document.querySelector(`#playerMonster`); // Span del Player =
 
@@ -31,7 +31,7 @@ export const checkedAdd = () => {
 
   enemySelectAdd();
 };
-
+//*! === Enemy */
 const enemySelectAdd = () => {
   let enemyMonster = document.querySelector("#enemyMonster");
   let enemyAttack = random(1, 3);
