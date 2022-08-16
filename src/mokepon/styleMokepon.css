@@ -191,26 +191,23 @@ span {
 }
 
 /* == AppendChild*/
-.childMonster {
+.childMonster,
+.monsterEnemy {
     width: 100%;
     margin: 2rem auto;
-    display: flex;
+    /*  display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: .5rem;
 }
 
 .monsterImg {
     border-radius: 2rem;
     padding: 5px;
     object-fit: cover;
-}
-
-.monsterEnemy {
-    width: 100%;
-    margin: 2rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .attack-Section {
@@ -222,9 +219,13 @@ span {
 .childAttack-Enemy {
     width: 100%;
     margin: 2rem auto;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
 }
 
 .fireImage,
