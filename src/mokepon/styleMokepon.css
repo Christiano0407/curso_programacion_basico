@@ -236,3 +236,15 @@ span {
     border-radius: 50%;
     border: none;
 }
+
+.messageEnemy,
+.messageUser {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-right: .5rem;
+}
+
+/* .childAttack-Enemy {
+    flex-direction: column;
+} */

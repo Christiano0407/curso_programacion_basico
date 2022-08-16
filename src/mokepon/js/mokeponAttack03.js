@@ -7,15 +7,15 @@ let enemyAttack;
 
 //*? === Function Attack Fire, Water and Earth === */
 export const fireAttack = () => {
-  playAttack = console.log("Fire!!!");
+  playAttack = messageUser();
   imageAttackFire();
 };
 export const waterAttack = () => {
-  playAttack = console.log("Water");
+  playAttack = messageUser();
   imageAttackWater();
 };
 export const earthAttack = () => {
-  playAttack = console.log("Earth Rock");
+  playAttack = messageUser();
   imageAttackEarth();
 };
 
@@ -23,13 +23,13 @@ export const enemyRandomAttack = () => {
   let enemyAttackRandomPower = randomAttack(1, 3);
 
   if (enemyAttackRandomPower == 1) {
-    enemyAttack = console.log("Arrow Attack");
+    enemyAttack = messageAttack();
     imageAttackEnemyOne();
   } else if (enemyAttackRandomPower == 2) {
-    enemyAttack = console.log("Attack Thunder!");
+    enemyAttack = messageAttack();
     imageAttackEnemyTwo();
   } else if (enemyAttackRandomPower == 3) {
-    enemyAttack == console.log("Attack Smash");
+    enemyAttack == messageAttack();
     imageAttackEnemyThree();
   } else {
     console.log("Your not a power!");
@@ -98,3 +98,17 @@ function imageAttackEnemyThree() {
 const randomAttack = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
+
+//*! === Message */
+function messageUser() {
+  let paragraphUser = document.createElement("p");
+  paragraphUser.textContent = `User select: `;
+  paragraphUser.className = "messageUser";
+  divAttack.appendChild(paragraphUser);
+}
+function messageAttack() {
+  let paragraph = document.createElement("p");
+  paragraph.textContent = `Enemy select: `;
+  paragraph.className = "messageEnemy";
+  divEnemyAttack.appendChild(paragraph);
+}
